@@ -1,9 +1,20 @@
 #include <stdio.h>
-
-int MOTOR_CAPACITY = 12;
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
-    int motorCount, totalPackageWeight;
+  int motorCap = 12, motorCount, packageWeight, totalCap;
+  printf("How many motors are carrying the package? ");
+  scanf("%d", &motorCount);
 
-    /// YOUR CODE HERE
+  totalCap = motorCap * motorCount;
+  printf("How many kg of package do we expect? ");
+  scanf("%d", &packageWeight);
+
+  if (totalCap >= packageWeight) {
+    printf("Yes! The conveyor belt can carry the packages.");
+  } else {
+    printf("No. The conveyor belt cannot carry the packages.");
+  }
+  
 }
