@@ -1,3 +1,6 @@
+// Estimates pi by placing random points on a square
+// with an area of 1 and counting the number of
+// points inside the circle's quarter arc.
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
